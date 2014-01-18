@@ -1,3 +1,14 @@
+The ultimate wishlist app. Built at MHacks 2014W.
+
+Created by:
+Evan Walsh
+Jeremy Meyer
+Roy Fu
+Lainie Wright
+
+
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
