@@ -7,10 +7,12 @@
         Make your <span class="inline-app-name"><strong>IdealList</strong></span>.</h1>
         <form class="form-inline" role="form">
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-          </div>
-          <button type="submit" class="btn btn-warning btn-lg">Join</button>
-        </form>         
+            <%= link_to " Log in ", new_user_session_path, class: "btn btn-default btn-lg" %>
+            <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+            <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address"> --> <!-- Old sign up email box -->
+          </div> 
+          <!-- <button type="submit" class="btn btn-warning btn-lg">Join</button> -->
+        </form>   <!-- Old sign up button -->
       </div><!-- /col-lg-6 -->
       <div class="col-lg-6">
         <%= image_tag "ipad-hand.png", class: "img-responsive" %>
