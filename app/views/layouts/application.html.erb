@@ -8,11 +8,17 @@
   
   <%= stylesheet_link_tag    "bootstrap_and_customization", media: "all", "data-turbolinks-track" => true %>
   
-  <%= render 'layouts/header' %>
+ 
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+	 <%= render 'layouts/header' %>
+	 
+		<% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-info") %>
+		<% end %>
+	
 <%= yield %>
 
 </body>

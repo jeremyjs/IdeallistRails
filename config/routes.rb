@@ -1,4 +1,5 @@
 Ideallist::Application.routes.draw do
+  devise_for :users
   get "landing/index"
   root "landing#index"
   get "home" => "landing#home"
