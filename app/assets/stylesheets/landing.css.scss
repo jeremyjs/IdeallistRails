@@ -11,6 +11,8 @@
  * URL: http://blacktie.co
  */
 
+@import "colors";
+
 body {
   background-color: #f2f2f2;
     font-family: 'Lato', sans-serif;
@@ -127,7 +129,7 @@ i {
 /* HeaderWrap */
 #headerwrap {
   /* background: url(../img/bg01.jpg) no-repeat center top; */
-  background-color: #3498db;
+  background-color: $whiteish;
   margin-top: -20px;
   padding-top:200px;
   background-attachment: relative;
@@ -156,5 +158,5 @@ i {
 }
 
 .inline-app-name {
-  color: black;
+  color: $blood;
 }
