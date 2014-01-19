@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @product.isbn %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @product.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= puts @product.category_id %>
+  <%= Category.find(1).name %>
+</p>
+
+<p>
+  <strong>Amazon url:</strong>
+  <%= @product.amazon_url %>
+</p>
+
+<p>
+  <strong>Small image url:</strong>
+  <%= @product.small_image_url %>
+</p>
+
+<p>
+  <strong>Medium image url:</strong>
+  <%= @product.medium_image_url %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

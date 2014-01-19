@@ -1,4 +1,8 @@
 Ideallist::Application.routes.draw do
+  resources :products
+
+  resources :categories
+
   devise_for :users
   get "landing/index"
   root "landing#index"
