@@ -8,11 +8,11 @@
         <form class="form-inline" role="form">
           <div class="form-group">
             <% if user_signed_in? %>
-            # do something
+            
 
             <% else %>
-              <%= link_to " Log in ", new_user_session_path, class: "btn btn-default btn-lg" %>
-              <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+            <%= link_to " Log in ", new_user_session_path, class: "btn btn-default btn-lg" %>
+            <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
               <% end %>
             <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address"> --> <!-- Old sign up email box -->
           </div> 
