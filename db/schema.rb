@@ -11,7 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140118204509) do
+=======
+ActiveRecord::Schema.define(version: 20140118203706) do
+
+  create_table "categories", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", force: true do |t|
+    t.string   "isbn"
+    t.string   "title"
+    t.string   "author"
+    t.integer  "price"
+    t.integer  "category_id"
+    t.string   "amazon_url"
+    t.string   "small_image_url"
+    t.string   "medium_image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "fprice"
+  end
+>>>>>>> 21754c8a11fcbcee095006a3fb111f94792bc4c0
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -18,8 +18,11 @@
           <% if user_signed_in? %>
           <li><%= link_to "View List", index_path %></li>
           <li><%= link_to "Edit List", index_path %></li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret">
+        <ul class="dropdown-menu">
           <li><%= link_to "Account Settings", edit_user_registration_path %></li>
-          <li><%= button_to "Sign out", destroy_user_session_path, method: :delete %></li>
+          <li><%= button_to "Sign out", destroy_user_session_path, method: :delete %></li></b></a>
           <% else %>
          <li><%= link_to "Log in", new_user_session_path %>
           </li>
