@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore lock files
-*.lock
+Gemfile.lock
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
